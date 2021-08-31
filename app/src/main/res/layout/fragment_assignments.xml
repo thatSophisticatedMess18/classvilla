@@ -5,10 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".AssignmentsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <TextView
+       android:id="@+id/tvAssignments"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="24dp"
+       android:fontFamily="@font/roboto"
+       android:text="Assignments"
+       android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+       android:textColor="@color/secondaryDarkColor"
+       android:textStyle="bold"></TextView>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvAssignments"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginTop="75dp"
+       tools:listitem="@layout/list_item_assignments"/>
+
 
 </FrameLayout>
